@@ -1,6 +1,26 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
 `thinclass` is an implementation of the commercial thinning classifier developed in Frank et al. (2019) for the R programming language.
 It is meant to provide a re-producable commercial thinning classifier using the XGBoost (XGB) and Random Forests (RF) methods, fixed radius plot data, and coincident
 aerial lidar acquisition.
+
+## Installation
+
+Some dependencies are required for use:
+
+```
+install.packages(c('rBayesianOptimization', 'raster', 'tools', 'xgboost', 'randomForest', 'pROC', 'devtools'))
+```
+
+Load `thinclass` using `devtools`:
+
+```
+library(devtools)
+devtools::load_all("path-to-thinclass-directory")
+```
 
 ## Structure
 
@@ -12,7 +32,7 @@ Comments and documentation strings should clarify the purpose of each function.
 
 The raw code used for the analysis of Frank et al. (2019) was originally implemented in Python, and is available for viewing in `original_scripts_and_data.zip`.
 However, to develop an understanding of the fundamentals of the study and to implement the method we suggest reading the source code in the `R`
-directory rather than the Python scripts (see below).
+directory rather than the Python scripts (see below). Also, please refer to the flowchart provided in `demo/flow_chart.pptx`.
 
 ## Deviations from Manuscript
 
