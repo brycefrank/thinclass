@@ -1,8 +1,3 @@
----
-output:
-  word_document: default
-  html_document: default
----
 `thinclass` is an implementation of the commercial thinning classifier developed in Frank et al. (2019) for the R programming language.
 It is meant to provide a re-producable commercial thinning classifier using the XGBoost (XGB) and Random Forests (RF) methods, fixed radius plot data, and coincident
 aerial lidar acquisition.
